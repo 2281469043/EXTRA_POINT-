@@ -1,0 +1,2118 @@
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ node --experimental-worker your-script.js
+node:internal/modules/cjs/loader:1152
+  throw err;
+  ^
+
+Error: Cannot find module '/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2/your-script.js'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1149:15)
+    at Module._load (node:internal/modules/cjs/loader:990:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:142:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v21.6.2
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs powersoftau new bn128 12 pot12_0000.ptau -v
+[DEBUG] snarkJS: Calculating First Challenge Hash
+[DEBUG] snarkJS: Calculate Initial Hash: tauG1
+[DEBUG] snarkJS: Calculate Initial Hash: tauG2
+[DEBUG] snarkJS: Calculate Initial Hash: alphaTauG1
+[DEBUG] snarkJS: Calculate Initial Hash: betaTauG1
+[DEBUG] snarkJS: Blank Contribution Hash:
+                786a02f7 42015903 c6c6fd85 2552d272
+                912f4740 e1584761 8a86e217 f71f5419
+                d25e1031 afee5853 13896444 934eb04b
+                903a685b 1448b755 d56f701a fe9be2ce
+[INFO]  snarkJS: First Contribution Hash:
+                9e63a5f6 2b96538d aaed2372 481920d1
+                a40b9195 9ea38ef9 f5f6a303 3b886516
+                0710d067 c09d0961 5f928ea5 17bcdf49
+                ad75abd2 c8340b40 0e3b18e9 68b4ffef
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name="First contribution" -v
+Enter a random text. (Entropy): sdasfsdfad
+[DEBUG] snarkJS: Calculating First Challenge Hash
+[DEBUG] snarkJS: Calculate Initial Hash: tauG1
+[DEBUG] snarkJS: Calculate Initial Hash: tauG2
+[DEBUG] snarkJS: Calculate Initial Hash: alphaTauG1
+[DEBUG] snarkJS: Calculate Initial Hash: betaTauG1
+[DEBUG] snarkJS: processing: tauG1: 0/8191
+[DEBUG] snarkJS: processing: tauG2: 0/4096
+[DEBUG] snarkJS: processing: alphaTauG1: 0/4096
+[DEBUG] snarkJS: processing: betaTauG1: 0/4096
+[DEBUG] snarkJS: processing: betaTauG2: 0/1
+[INFO]  snarkJS: Contribution Response Hash imported:
+                d468b681 2306b193 6b8a2ea5 b044bcfc
+                103523fb 39af56ea 974258d5 58313a87
+                661e61cd b8f5e30a 9a5ecdd4 6e006c6a
+                e3c56237 c4079cc2 ffd0336e 86ea6cf6
+[INFO]  snarkJS: Next Challenge Hash:
+                b31fc99b a9f8c78f 73bc7001 7cedda56
+                522a0e2f 0f642124 9681accb f1ed8131
+                56acd12f 10af370b d78f6bd9 84637e76
+                b8e74813 0f6b006e 2c746764 05cb7b68
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs powersoftau prepare phase2 pot12_0001.ptau pot12_final.ptau -v
+[DEBUG] snarkJS: Starting section: tauG1
+[DEBUG] snarkJS: tauG1: fft 0 mix start: 0/1
+[DEBUG] snarkJS: tauG1: fft 0 mix end: 0/1
+[DEBUG] snarkJS: tauG1: fft 1 mix start: 0/1
+[DEBUG] snarkJS: tauG1: fft 1 mix end: 0/1
+[DEBUG] snarkJS: tauG1: fft 2 mix start: 0/1
+[DEBUG] snarkJS: tauG1: fft 2 mix end: 0/1
+[DEBUG] snarkJS: tauG1: fft 3 mix start: 0/1
+[DEBUG] snarkJS: tauG1: fft 3 mix end: 0/1
+[DEBUG] snarkJS: tauG1: fft 4 mix start: 0/2
+[DEBUG] snarkJS: tauG1: fft 4 mix start: 1/2
+[DEBUG] snarkJS: tauG1: fft 4 mix end: 0/2
+[DEBUG] snarkJS: tauG1: fft 4 mix end: 1/2
+[DEBUG] snarkJS: tauG1: fft  4  join: 4/4
+[DEBUG] snarkJS: tauG1: fft 4 join  4/4  1/1 0/1
+[DEBUG] snarkJS: tauG1: fft 5 mix start: 0/4
+[DEBUG] snarkJS: tauG1: fft 5 mix start: 1/4
+[DEBUG] snarkJS: tauG1: fft 5 mix start: 2/4
+[DEBUG] snarkJS: tauG1: fft 5 mix start: 3/4
+[DEBUG] snarkJS: tauG1: fft 5 mix end: 0/4
+[DEBUG] snarkJS: tauG1: fft 5 mix end: 1/4
+[DEBUG] snarkJS: tauG1: fft 5 mix end: 2/4
+[DEBUG] snarkJS: tauG1: fft 5 mix end: 3/4
+[DEBUG] snarkJS: tauG1: fft  5  join: 4/5
+[DEBUG] snarkJS: tauG1: fft 5 join  4/5  1/2 0/1
+[DEBUG] snarkJS: tauG1: fft 5 join  4/5  2/2 0/1
+[DEBUG] snarkJS: tauG1: fft  5  join: 5/5
+[DEBUG] snarkJS: tauG1: fft 5 join  5/5  1/1 0/2
+[DEBUG] snarkJS: tauG1: fft 5 join  5/5  1/1 1/2
+[DEBUG] snarkJS: tauG1: fft 6 mix start: 0/8
+[DEBUG] snarkJS: tauG1: fft 6 mix start: 1/8
+[DEBUG] snarkJS: tauG1: fft 6 mix start: 2/8
+[DEBUG] snarkJS: tauG1: fft 6 mix start: 3/8
+[DEBUG] snarkJS: tauG1: fft 6 mix start: 4/8
+[DEBUG] snarkJS: tauG1: fft 6 mix start: 5/8
+[DEBUG] snarkJS: tauG1: fft 6 mix start: 6/8
+[DEBUG] snarkJS: tauG1: fft 6 mix start: 7/8
+[DEBUG] snarkJS: tauG1: fft 6 mix end: 0/8
+[DEBUG] snarkJS: tauG1: fft 6 mix end: 2/8
+[DEBUG] snarkJS: tauG1: fft 6 mix end: 1/8
+[DEBUG] snarkJS: tauG1: fft 6 mix end: 3/8
+[DEBUG] snarkJS: tauG1: fft 6 mix end: 5/8
+[DEBUG] snarkJS: tauG1: fft 6 mix end: 4/8
+[DEBUG] snarkJS: tauG1: fft 6 mix end: 6/8
+[DEBUG] snarkJS: tauG1: fft 6 mix end: 7/8
+[DEBUG] snarkJS: tauG1: fft  6  join: 4/6
+[DEBUG] snarkJS: tauG1: fft 6 join  4/6  1/4 0/1
+[DEBUG] snarkJS: tauG1: fft 6 join  4/6  2/4 0/1
+[DEBUG] snarkJS: tauG1: fft 6 join  4/6  3/4 0/1
+[DEBUG] snarkJS: tauG1: fft 6 join  4/6  4/4 0/1
+[DEBUG] snarkJS: tauG1: fft  6  join: 5/6
+[DEBUG] snarkJS: tauG1: fft 6 join  5/6  1/2 0/2
+[DEBUG] snarkJS: tauG1: fft 6 join  5/6  1/2 1/2
+[DEBUG] snarkJS: tauG1: fft 6 join  5/6  2/2 0/2
+[DEBUG] snarkJS: tauG1: fft 6 join  5/6  2/2 1/2
+[DEBUG] snarkJS: tauG1: fft  6  join: 6/6
+[DEBUG] snarkJS: tauG1: fft 6 join  6/6  1/1 0/4
+[DEBUG] snarkJS: tauG1: fft 6 join  6/6  1/1 2/4
+[DEBUG] snarkJS: tauG1: fft 6 join  6/6  1/1 1/4
+[DEBUG] snarkJS: tauG1: fft 6 join  6/6  1/1 3/4
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 0/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 1/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 2/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 3/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 4/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 5/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 6/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 7/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 8/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 9/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 10/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 11/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 12/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 13/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 14/16
+[DEBUG] snarkJS: tauG1: fft 7 mix start: 15/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 2/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 0/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 4/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 5/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 6/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 1/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 7/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 9/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 10/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 11/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 8/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 13/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 3/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 12/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 14/16
+[DEBUG] snarkJS: tauG1: fft 7 mix end: 15/16
+[DEBUG] snarkJS: tauG1: fft  7  join: 4/7
+[DEBUG] snarkJS: tauG1: fft 7 join  4/7  4/8 0/1
+[DEBUG] snarkJS: tauG1: fft 7 join  4/7  5/8 0/1
+[DEBUG] snarkJS: tauG1: fft 7 join  4/7  1/8 0/1
+[DEBUG] snarkJS: tauG1: fft 7 join  4/7  2/8 0/1
+[DEBUG] snarkJS: tauG1: fft 7 join  4/7  3/8 0/1
+[DEBUG] snarkJS: tauG1: fft 7 join  4/7  6/8 0/1
+[DEBUG] snarkJS: tauG1: fft 7 join  4/7  7/8 0/1
+[DEBUG] snarkJS: tauG1: fft 7 join  4/7  8/8 0/1
+[DEBUG] snarkJS: tauG1: fft  7  join: 5/7
+[DEBUG] snarkJS: tauG1: fft 7 join  5/7  1/4 0/2
+[DEBUG] snarkJS: tauG1: fft 7 join  5/7  3/4 0/2
+[DEBUG] snarkJS: tauG1: fft 7 join  5/7  2/4 1/2
+[DEBUG] snarkJS: tauG1: fft 7 join  5/7  3/4 1/2
+[DEBUG] snarkJS: tauG1: fft 7 join  5/7  2/4 0/2
+[DEBUG] snarkJS: tauG1: fft 7 join  5/7  4/4 0/2
+[DEBUG] snarkJS: tauG1: fft 7 join  5/7  1/4 1/2
+[DEBUG] snarkJS: tauG1: fft 7 join  5/7  4/4 1/2
+[DEBUG] snarkJS: tauG1: fft  7  join: 6/7
+[DEBUG] snarkJS: tauG1: fft 7 join  6/7  1/2 1/4
+[DEBUG] snarkJS: tauG1: fft 7 join  6/7  2/2 0/4
+[DEBUG] snarkJS: tauG1: fft 7 join  6/7  1/2 3/4
+[DEBUG] snarkJS: tauG1: fft 7 join  6/7  2/2 1/4
+[DEBUG] snarkJS: tauG1: fft 7 join  6/7  1/2 0/4
+[DEBUG] snarkJS: tauG1: fft 7 join  6/7  2/2 2/4
+[DEBUG] snarkJS: tauG1: fft 7 join  6/7  1/2 2/4
+[DEBUG] snarkJS: tauG1: fft 7 join  6/7  2/2 3/4
+[DEBUG] snarkJS: tauG1: fft  7  join: 7/7
+[DEBUG] snarkJS: tauG1: fft 7 join  7/7  1/1 5/8
+[DEBUG] snarkJS: tauG1: fft 7 join  7/7  1/1 6/8
+[DEBUG] snarkJS: tauG1: fft 7 join  7/7  1/1 4/8
+[DEBUG] snarkJS: tauG1: fft 7 join  7/7  1/1 3/8
+[DEBUG] snarkJS: tauG1: fft 7 join  7/7  1/1 0/8
+[DEBUG] snarkJS: tauG1: fft 7 join  7/7  1/1 1/8
+[DEBUG] snarkJS: tauG1: fft 7 join  7/7  1/1 2/8
+[DEBUG] snarkJS: tauG1: fft 7 join  7/7  1/1 7/8
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 0/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 1/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 2/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 3/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 4/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 5/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 6/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 7/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 8/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 9/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 10/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 11/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 12/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 13/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 14/16
+[DEBUG] snarkJS: tauG1: fft 8 mix start: 15/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 14/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 3/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 4/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 0/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 1/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 5/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 6/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 10/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 11/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 15/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 9/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 2/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 7/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 13/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 12/16
+[DEBUG] snarkJS: tauG1: fft 8 mix end: 8/16
+[DEBUG] snarkJS: tauG1: fft  8  join: 5/8
+[DEBUG] snarkJS: tauG1: fft 8 join  5/8  1/8 0/1
+[DEBUG] snarkJS: tauG1: fft 8 join  5/8  3/8 0/1
+[DEBUG] snarkJS: tauG1: fft 8 join  5/8  4/8 0/1
+[DEBUG] snarkJS: tauG1: fft 8 join  5/8  5/8 0/1
+[DEBUG] snarkJS: tauG1: fft 8 join  5/8  6/8 0/1
+[DEBUG] snarkJS: tauG1: fft 8 join  5/8  7/8 0/1
+[DEBUG] snarkJS: tauG1: fft 8 join  5/8  2/8 0/1
+[DEBUG] snarkJS: tauG1: fft 8 join  5/8  8/8 0/1
+[DEBUG] snarkJS: tauG1: fft  8  join: 6/8
+[DEBUG] snarkJS: tauG1: fft 8 join  6/8  1/4 0/2
+[DEBUG] snarkJS: tauG1: fft 8 join  6/8  2/4 0/2
+[DEBUG] snarkJS: tauG1: fft 8 join  6/8  2/4 1/2
+[DEBUG] snarkJS: tauG1: fft 8 join  6/8  3/4 0/2
+[DEBUG] snarkJS: tauG1: fft 8 join  6/8  4/4 0/2
+[DEBUG] snarkJS: tauG1: fft 8 join  6/8  1/4 1/2
+[DEBUG] snarkJS: tauG1: fft 8 join  6/8  4/4 1/2
+[DEBUG] snarkJS: tauG1: fft 8 join  6/8  3/4 1/2
+[DEBUG] snarkJS: tauG1: fft  8  join: 7/8
+[DEBUG] snarkJS: tauG1: fft 8 join  7/8  1/2 2/4
+[DEBUG] snarkJS: tauG1: fft 8 join  7/8  1/2 3/4
+[DEBUG] snarkJS: tauG1: fft 8 join  7/8  2/2 0/4
+[DEBUG] snarkJS: tauG1: fft 8 join  7/8  2/2 3/4
+[DEBUG] snarkJS: tauG1: fft 8 join  7/8  1/2 0/4
+[DEBUG] snarkJS: tauG1: fft 8 join  7/8  2/2 2/4
+[DEBUG] snarkJS: tauG1: fft 8 join  7/8  1/2 1/4
+[DEBUG] snarkJS: tauG1: fft 8 join  7/8  2/2 1/4
+[DEBUG] snarkJS: tauG1: fft  8  join: 8/8
+[DEBUG] snarkJS: tauG1: fft 8 join  8/8  1/1 5/8
+[DEBUG] snarkJS: tauG1: fft 8 join  8/8  1/1 6/8
+[DEBUG] snarkJS: tauG1: fft 8 join  8/8  1/1 0/8
+[DEBUG] snarkJS: tauG1: fft 8 join  8/8  1/1 1/8
+[DEBUG] snarkJS: tauG1: fft 8 join  8/8  1/1 3/8
+[DEBUG] snarkJS: tauG1: fft 8 join  8/8  1/1 4/8
+[DEBUG] snarkJS: tauG1: fft 8 join  8/8  1/1 2/8
+[DEBUG] snarkJS: tauG1: fft 8 join  8/8  1/1 7/8
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 0/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 1/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 2/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 3/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 4/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 5/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 6/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 7/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 8/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 9/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 10/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 11/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 12/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 13/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 14/16
+[DEBUG] snarkJS: tauG1: fft 9 mix start: 15/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 3/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 5/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 7/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 4/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 15/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 1/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 8/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 10/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 14/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 2/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 6/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 0/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 13/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 9/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 12/16
+[DEBUG] snarkJS: tauG1: fft 9 mix end: 11/16
+[DEBUG] snarkJS: tauG1: fft  9  join: 6/9
+[DEBUG] snarkJS: tauG1: fft 9 join  6/9  4/8 0/1
+[DEBUG] snarkJS: tauG1: fft 9 join  6/9  5/8 0/1
+[DEBUG] snarkJS: tauG1: fft 9 join  6/9  7/8 0/1
+[DEBUG] snarkJS: tauG1: fft 9 join  6/9  1/8 0/1
+[DEBUG] snarkJS: tauG1: fft 9 join  6/9  3/8 0/1
+[DEBUG] snarkJS: tauG1: fft 9 join  6/9  6/8 0/1
+[DEBUG] snarkJS: tauG1: fft 9 join  6/9  2/8 0/1
+[DEBUG] snarkJS: tauG1: fft 9 join  6/9  8/8 0/1
+[DEBUG] snarkJS: tauG1: fft  9  join: 7/9
+[DEBUG] snarkJS: tauG1: fft 9 join  7/9  2/4 1/2
+[DEBUG] snarkJS: tauG1: fft 9 join  7/9  3/4 1/2
+[DEBUG] snarkJS: tauG1: fft 9 join  7/9  4/4 0/2
+[DEBUG] snarkJS: tauG1: fft 9 join  7/9  1/4 1/2
+[DEBUG] snarkJS: tauG1: fft 9 join  7/9  2/4 0/2
+[DEBUG] snarkJS: tauG1: fft 9 join  7/9  1/4 0/2
+[DEBUG] snarkJS: tauG1: fft 9 join  7/9  3/4 0/2
+[DEBUG] snarkJS: tauG1: fft 9 join  7/9  4/4 1/2
+[DEBUG] snarkJS: tauG1: fft  9  join: 8/9
+[DEBUG] snarkJS: tauG1: fft 9 join  8/9  2/2 0/4
+[DEBUG] snarkJS: tauG1: fft 9 join  8/9  2/2 1/4
+[DEBUG] snarkJS: tauG1: fft 9 join  8/9  1/2 0/4
+[DEBUG] snarkJS: tauG1: fft 9 join  8/9  1/2 1/4
+[DEBUG] snarkJS: tauG1: fft 9 join  8/9  1/2 2/4
+[DEBUG] snarkJS: tauG1: fft 9 join  8/9  1/2 3/4
+[DEBUG] snarkJS: tauG1: fft 9 join  8/9  2/2 2/4
+[DEBUG] snarkJS: tauG1: fft 9 join  8/9  2/2 3/4
+[DEBUG] snarkJS: tauG1: fft  9  join: 9/9
+[DEBUG] snarkJS: tauG1: fft 9 join  9/9  1/1 0/8
+[DEBUG] snarkJS: tauG1: fft 9 join  9/9  1/1 1/8
+[DEBUG] snarkJS: tauG1: fft 9 join  9/9  1/1 5/8
+[DEBUG] snarkJS: tauG1: fft 9 join  9/9  1/1 2/8
+[DEBUG] snarkJS: tauG1: fft 9 join  9/9  1/1 6/8
+[DEBUG] snarkJS: tauG1: fft 9 join  9/9  1/1 7/8
+[DEBUG] snarkJS: tauG1: fft 9 join  9/9  1/1 4/8
+[DEBUG] snarkJS: tauG1: fft 9 join  9/9  1/1 3/8
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 0/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 1/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 2/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 3/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 4/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 5/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 6/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 7/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 8/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 9/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 10/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 11/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 12/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 13/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 14/16
+[DEBUG] snarkJS: tauG1: fft 10 mix start: 15/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 6/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 2/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 4/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 9/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 12/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 11/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 8/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 7/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 14/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 0/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 13/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 15/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 1/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 10/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 3/16
+[DEBUG] snarkJS: tauG1: fft 10 mix end: 5/16
+[DEBUG] snarkJS: tauG1: fft  10  join: 7/10
+[DEBUG] snarkJS: tauG1: fft 10 join  7/10  4/8 0/1
+[DEBUG] snarkJS: tauG1: fft 10 join  7/10  6/8 0/1
+[DEBUG] snarkJS: tauG1: fft 10 join  7/10  2/8 0/1
+[DEBUG] snarkJS: tauG1: fft 10 join  7/10  3/8 0/1
+[DEBUG] snarkJS: tauG1: fft 10 join  7/10  7/8 0/1
+[DEBUG] snarkJS: tauG1: fft 10 join  7/10  8/8 0/1
+[DEBUG] snarkJS: tauG1: fft 10 join  7/10  5/8 0/1
+[DEBUG] snarkJS: tauG1: fft 10 join  7/10  1/8 0/1
+[DEBUG] snarkJS: tauG1: fft  10  join: 8/10
+[DEBUG] snarkJS: tauG1: fft 10 join  8/10  3/4 1/2
+[DEBUG] snarkJS: tauG1: fft 10 join  8/10  4/4 0/2
+[DEBUG] snarkJS: tauG1: fft 10 join  8/10  1/4 0/2
+[DEBUG] snarkJS: tauG1: fft 10 join  8/10  2/4 0/2
+[DEBUG] snarkJS: tauG1: fft 10 join  8/10  3/4 0/2
+[DEBUG] snarkJS: tauG1: fft 10 join  8/10  1/4 1/2
+[DEBUG] snarkJS: tauG1: fft 10 join  8/10  2/4 1/2
+[DEBUG] snarkJS: tauG1: fft 10 join  8/10  4/4 1/2
+[DEBUG] snarkJS: tauG1: fft  10  join: 9/10
+[DEBUG] snarkJS: tauG1: fft 10 join  9/10  1/2 0/4
+[DEBUG] snarkJS: tauG1: fft 10 join  9/10  2/2 0/4
+[DEBUG] snarkJS: tauG1: fft 10 join  9/10  1/2 3/4
+[DEBUG] snarkJS: tauG1: fft 10 join  9/10  1/2 1/4
+[DEBUG] snarkJS: tauG1: fft 10 join  9/10  2/2 1/4
+[DEBUG] snarkJS: tauG1: fft 10 join  9/10  2/2 3/4
+[DEBUG] snarkJS: tauG1: fft 10 join  9/10  2/2 2/4
+[DEBUG] snarkJS: tauG1: fft 10 join  9/10  1/2 2/4
+[DEBUG] snarkJS: tauG1: fft  10  join: 10/10
+[DEBUG] snarkJS: tauG1: fft 10 join  10/10  1/1 6/8
+[DEBUG] snarkJS: tauG1: fft 10 join  10/10  1/1 1/8
+[DEBUG] snarkJS: tauG1: fft 10 join  10/10  1/1 7/8
+[DEBUG] snarkJS: tauG1: fft 10 join  10/10  1/1 4/8
+[DEBUG] snarkJS: tauG1: fft 10 join  10/10  1/1 5/8
+[DEBUG] snarkJS: tauG1: fft 10 join  10/10  1/1 3/8
+[DEBUG] snarkJS: tauG1: fft 10 join  10/10  1/1 0/8
+[DEBUG] snarkJS: tauG1: fft 10 join  10/10  1/1 2/8
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 0/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 1/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 2/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 3/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 4/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 5/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 6/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 7/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 8/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 9/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 10/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 11/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 12/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 13/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 14/16
+[DEBUG] snarkJS: tauG1: fft 11 mix start: 15/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 1/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 4/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 7/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 0/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 9/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 10/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 14/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 15/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 12/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 5/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 6/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 8/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 11/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 2/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 3/16
+[DEBUG] snarkJS: tauG1: fft 11 mix end: 13/16
+[DEBUG] snarkJS: tauG1: fft  11  join: 8/11
+[DEBUG] snarkJS: tauG1: fft 11 join  8/11  4/8 0/1
+[DEBUG] snarkJS: tauG1: fft 11 join  8/11  2/8 0/1
+[DEBUG] snarkJS: tauG1: fft 11 join  8/11  7/8 0/1
+[DEBUG] snarkJS: tauG1: fft 11 join  8/11  5/8 0/1
+[DEBUG] snarkJS: tauG1: fft 11 join  8/11  8/8 0/1
+[DEBUG] snarkJS: tauG1: fft 11 join  8/11  3/8 0/1
+[DEBUG] snarkJS: tauG1: fft 11 join  8/11  6/8 0/1
+[DEBUG] snarkJS: tauG1: fft 11 join  8/11  1/8 0/1
+[DEBUG] snarkJS: tauG1: fft  11  join: 9/11
+[DEBUG] snarkJS: tauG1: fft 11 join  9/11  2/4 0/2
+[DEBUG] snarkJS: tauG1: fft 11 join  9/11  4/4 0/2
+[DEBUG] snarkJS: tauG1: fft 11 join  9/11  2/4 1/2
+[DEBUG] snarkJS: tauG1: fft 11 join  9/11  1/4 1/2
+[DEBUG] snarkJS: tauG1: fft 11 join  9/11  4/4 1/2
+[DEBUG] snarkJS: tauG1: fft 11 join  9/11  1/4 0/2
+[DEBUG] snarkJS: tauG1: fft 11 join  9/11  3/4 1/2
+[DEBUG] snarkJS: tauG1: fft 11 join  9/11  3/4 0/2
+[DEBUG] snarkJS: tauG1: fft  11  join: 10/11
+[DEBUG] snarkJS: tauG1: fft 11 join  10/11  2/2 3/4
+[DEBUG] snarkJS: tauG1: fft 11 join  10/11  1/2 2/4
+[DEBUG] snarkJS: tauG1: fft 11 join  10/11  2/2 1/4
+[DEBUG] snarkJS: tauG1: fft 11 join  10/11  2/2 0/4
+[DEBUG] snarkJS: tauG1: fft 11 join  10/11  1/2 3/4
+[DEBUG] snarkJS: tauG1: fft 11 join  10/11  1/2 0/4
+[DEBUG] snarkJS: tauG1: fft 11 join  10/11  1/2 1/4
+[DEBUG] snarkJS: tauG1: fft 11 join  10/11  2/2 2/4
+[DEBUG] snarkJS: tauG1: fft  11  join: 11/11
+[DEBUG] snarkJS: tauG1: fft 11 join  11/11  1/1 3/8
+[DEBUG] snarkJS: tauG1: fft 11 join  11/11  1/1 0/8
+[DEBUG] snarkJS: tauG1: fft 11 join  11/11  1/1 1/8
+[DEBUG] snarkJS: tauG1: fft 11 join  11/11  1/1 7/8
+[DEBUG] snarkJS: tauG1: fft 11 join  11/11  1/1 6/8
+[DEBUG] snarkJS: tauG1: fft 11 join  11/11  1/1 4/8
+[DEBUG] snarkJS: tauG1: fft 11 join  11/11  1/1 5/8
+[DEBUG] snarkJS: tauG1: fft 11 join  11/11  1/1 2/8
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 0/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 1/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 2/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 3/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 4/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 5/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 6/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 7/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 8/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 9/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 10/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 11/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 12/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 13/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 14/16
+[DEBUG] snarkJS: tauG1: fft 12 mix start: 15/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 9/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 0/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 11/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 8/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 12/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 5/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 2/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 4/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 10/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 14/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 3/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 6/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 7/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 13/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 1/16
+[DEBUG] snarkJS: tauG1: fft 12 mix end: 15/16
+[DEBUG] snarkJS: tauG1: fft  12  join: 9/12
+[DEBUG] snarkJS: tauG1: fft 12 join  9/12  3/8 0/1
+[DEBUG] snarkJS: tauG1: fft 12 join  9/12  7/8 0/1
+[DEBUG] snarkJS: tauG1: fft 12 join  9/12  4/8 0/1
+[DEBUG] snarkJS: tauG1: fft 12 join  9/12  2/8 0/1
+[DEBUG] snarkJS: tauG1: fft 12 join  9/12  8/8 0/1
+[DEBUG] snarkJS: tauG1: fft 12 join  9/12  1/8 0/1
+[DEBUG] snarkJS: tauG1: fft 12 join  9/12  6/8 0/1
+[DEBUG] snarkJS: tauG1: fft 12 join  9/12  5/8 0/1
+[DEBUG] snarkJS: tauG1: fft  12  join: 10/12
+[DEBUG] snarkJS: tauG1: fft 12 join  10/12  4/4 1/2
+[DEBUG] snarkJS: tauG1: fft 12 join  10/12  2/4 1/2
+[DEBUG] snarkJS: tauG1: fft 12 join  10/12  2/4 0/2
+[DEBUG] snarkJS: tauG1: fft 12 join  10/12  1/4 0/2
+[DEBUG] snarkJS: tauG1: fft 12 join  10/12  1/4 1/2
+[DEBUG] snarkJS: tauG1: fft 12 join  10/12  3/4 1/2
+[DEBUG] snarkJS: tauG1: fft 12 join  10/12  3/4 0/2
+[DEBUG] snarkJS: tauG1: fft 12 join  10/12  4/4 0/2
+[DEBUG] snarkJS: tauG1: fft  12  join: 11/12
+[DEBUG] snarkJS: tauG1: fft 12 join  11/12  1/2 1/4
+[DEBUG] snarkJS: tauG1: fft 12 join  11/12  1/2 3/4
+[DEBUG] snarkJS: tauG1: fft 12 join  11/12  2/2 2/4
+[DEBUG] snarkJS: tauG1: fft 12 join  11/12  2/2 0/4
+[DEBUG] snarkJS: tauG1: fft 12 join  11/12  1/2 0/4
+[DEBUG] snarkJS: tauG1: fft 12 join  11/12  1/2 2/4
+[DEBUG] snarkJS: tauG1: fft 12 join  11/12  2/2 3/4
+[DEBUG] snarkJS: tauG1: fft 12 join  11/12  2/2 1/4
+[DEBUG] snarkJS: tauG1: fft  12  join: 12/12
+[DEBUG] snarkJS: tauG1: fft 12 join  12/12  1/1 2/8
+[DEBUG] snarkJS: tauG1: fft 12 join  12/12  1/1 6/8
+[DEBUG] snarkJS: tauG1: fft 12 join  12/12  1/1 1/8
+[DEBUG] snarkJS: tauG1: fft 12 join  12/12  1/1 0/8
+[DEBUG] snarkJS: tauG1: fft 12 join  12/12  1/1 4/8
+[DEBUG] snarkJS: tauG1: fft 12 join  12/12  1/1 5/8
+[DEBUG] snarkJS: tauG1: fft 12 join  12/12  1/1 3/8
+[DEBUG] snarkJS: tauG1: fft 12 join  12/12  1/1 7/8
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 0/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 1/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 2/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 3/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 4/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 5/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 6/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 7/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 8/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 9/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 10/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 11/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 12/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 13/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 14/16
+[DEBUG] snarkJS: tauG1: fft 13 mix start: 15/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 11/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 9/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 6/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 3/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 4/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 15/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 1/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 14/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 2/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 12/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 7/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 8/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 13/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 10/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 5/16
+[DEBUG] snarkJS: tauG1: fft 13 mix end: 0/16
+[DEBUG] snarkJS: tauG1: fft  13  join: 10/13
+[DEBUG] snarkJS: tauG1: fft 13 join  10/13  6/8 0/1
+[DEBUG] snarkJS: tauG1: fft 13 join  10/13  2/8 0/1
+[DEBUG] snarkJS: tauG1: fft 13 join  10/13  8/8 0/1
+[DEBUG] snarkJS: tauG1: fft 13 join  10/13  1/8 0/1
+[DEBUG] snarkJS: tauG1: fft 13 join  10/13  3/8 0/1
+[DEBUG] snarkJS: tauG1: fft 13 join  10/13  7/8 0/1
+[DEBUG] snarkJS: tauG1: fft 13 join  10/13  5/8 0/1
+[DEBUG] snarkJS: tauG1: fft 13 join  10/13  4/8 0/1
+[DEBUG] snarkJS: tauG1: fft  13  join: 11/13
+[DEBUG] snarkJS: tauG1: fft 13 join  11/13  4/4 0/2
+[DEBUG] snarkJS: tauG1: fft 13 join  11/13  1/4 1/2
+[DEBUG] snarkJS: tauG1: fft 13 join  11/13  2/4 1/2
+[DEBUG] snarkJS: tauG1: fft 13 join  11/13  2/4 0/2
+[DEBUG] snarkJS: tauG1: fft 13 join  11/13  3/4 0/2
+[DEBUG] snarkJS: tauG1: fft 13 join  11/13  3/4 1/2
+[DEBUG] snarkJS: tauG1: fft 13 join  11/13  4/4 1/2
+[DEBUG] snarkJS: tauG1: fft 13 join  11/13  1/4 0/2
+[DEBUG] snarkJS: tauG1: fft  13  join: 12/13
+[DEBUG] snarkJS: tauG1: fft 13 join  12/13  1/2 2/4
+[DEBUG] snarkJS: tauG1: fft 13 join  12/13  1/2 0/4
+[DEBUG] snarkJS: tauG1: fft 13 join  12/13  1/2 1/4
+[DEBUG] snarkJS: tauG1: fft 13 join  12/13  2/2 2/4
+[DEBUG] snarkJS: tauG1: fft 13 join  12/13  2/2 1/4
+[DEBUG] snarkJS: tauG1: fft 13 join  12/13  1/2 3/4
+[DEBUG] snarkJS: tauG1: fft 13 join  12/13  2/2 0/4
+[DEBUG] snarkJS: tauG1: fft 13 join  12/13  2/2 3/4
+[DEBUG] snarkJS: tauG1: fft  13  join: 13/13
+[DEBUG] snarkJS: tauG1: fft 13 join  13/13  1/1 4/8
+[DEBUG] snarkJS: tauG1: fft 13 join  13/13  1/1 0/8
+[DEBUG] snarkJS: tauG1: fft 13 join  13/13  1/1 5/8
+[DEBUG] snarkJS: tauG1: fft 13 join  13/13  1/1 3/8
+[DEBUG] snarkJS: tauG1: fft 13 join  13/13  1/1 7/8
+[DEBUG] snarkJS: tauG1: fft 13 join  13/13  1/1 2/8
+[DEBUG] snarkJS: tauG1: fft 13 join  13/13  1/1 6/8
+[DEBUG] snarkJS: tauG1: fft 13 join  13/13  1/1 1/8
+[DEBUG] snarkJS: Starting section: tauG2
+[DEBUG] snarkJS: tauG2: fft 0 mix start: 0/1
+[DEBUG] snarkJS: tauG2: fft 0 mix end: 0/1
+[DEBUG] snarkJS: tauG2: fft 1 mix start: 0/1
+[DEBUG] snarkJS: tauG2: fft 1 mix end: 0/1
+[DEBUG] snarkJS: tauG2: fft 2 mix start: 0/1
+[DEBUG] snarkJS: tauG2: fft 2 mix end: 0/1
+[DEBUG] snarkJS: tauG2: fft 3 mix start: 0/1
+[DEBUG] snarkJS: tauG2: fft 3 mix end: 0/1
+[DEBUG] snarkJS: tauG2: fft 4 mix start: 0/2
+[DEBUG] snarkJS: tauG2: fft 4 mix start: 1/2
+[DEBUG] snarkJS: tauG2: fft 4 mix end: 0/2
+[DEBUG] snarkJS: tauG2: fft 4 mix end: 1/2
+[DEBUG] snarkJS: tauG2: fft  4  join: 4/4
+[DEBUG] snarkJS: tauG2: fft 4 join  4/4  1/1 0/1
+[DEBUG] snarkJS: tauG2: fft 5 mix start: 0/4
+[DEBUG] snarkJS: tauG2: fft 5 mix start: 1/4
+[DEBUG] snarkJS: tauG2: fft 5 mix start: 2/4
+[DEBUG] snarkJS: tauG2: fft 5 mix start: 3/4
+[DEBUG] snarkJS: tauG2: fft 5 mix end: 0/4
+[DEBUG] snarkJS: tauG2: fft 5 mix end: 1/4
+[DEBUG] snarkJS: tauG2: fft 5 mix end: 2/4
+[DEBUG] snarkJS: tauG2: fft 5 mix end: 3/4
+[DEBUG] snarkJS: tauG2: fft  5  join: 4/5
+[DEBUG] snarkJS: tauG2: fft 5 join  4/5  1/2 0/1
+[DEBUG] snarkJS: tauG2: fft 5 join  4/5  2/2 0/1
+[DEBUG] snarkJS: tauG2: fft  5  join: 5/5
+[DEBUG] snarkJS: tauG2: fft 5 join  5/5  1/1 0/2
+[DEBUG] snarkJS: tauG2: fft 5 join  5/5  1/1 1/2
+[DEBUG] snarkJS: tauG2: fft 6 mix start: 0/8
+[DEBUG] snarkJS: tauG2: fft 6 mix start: 1/8
+[DEBUG] snarkJS: tauG2: fft 6 mix start: 2/8
+[DEBUG] snarkJS: tauG2: fft 6 mix start: 3/8
+[DEBUG] snarkJS: tauG2: fft 6 mix start: 4/8
+[DEBUG] snarkJS: tauG2: fft 6 mix start: 5/8
+[DEBUG] snarkJS: tauG2: fft 6 mix start: 6/8
+[DEBUG] snarkJS: tauG2: fft 6 mix start: 7/8
+[DEBUG] snarkJS: tauG2: fft 6 mix end: 0/8
+[DEBUG] snarkJS: tauG2: fft 6 mix end: 1/8
+[DEBUG] snarkJS: tauG2: fft 6 mix end: 2/8
+[DEBUG] snarkJS: tauG2: fft 6 mix end: 4/8
+[DEBUG] snarkJS: tauG2: fft 6 mix end: 5/8
+[DEBUG] snarkJS: tauG2: fft 6 mix end: 7/8
+[DEBUG] snarkJS: tauG2: fft 6 mix end: 3/8
+[DEBUG] snarkJS: tauG2: fft 6 mix end: 6/8
+[DEBUG] snarkJS: tauG2: fft  6  join: 4/6
+[DEBUG] snarkJS: tauG2: fft 6 join  4/6  2/4 0/1
+[DEBUG] snarkJS: tauG2: fft 6 join  4/6  3/4 0/1
+[DEBUG] snarkJS: tauG2: fft 6 join  4/6  4/4 0/1
+[DEBUG] snarkJS: tauG2: fft 6 join  4/6  1/4 0/1
+[DEBUG] snarkJS: tauG2: fft  6  join: 5/6
+[DEBUG] snarkJS: tauG2: fft 6 join  5/6  1/2 0/2
+[DEBUG] snarkJS: tauG2: fft 6 join  5/6  2/2 0/2
+[DEBUG] snarkJS: tauG2: fft 6 join  5/6  2/2 1/2
+[DEBUG] snarkJS: tauG2: fft 6 join  5/6  1/2 1/2
+[DEBUG] snarkJS: tauG2: fft  6  join: 6/6
+[DEBUG] snarkJS: tauG2: fft 6 join  6/6  1/1 3/4
+[DEBUG] snarkJS: tauG2: fft 6 join  6/6  1/1 0/4
+[DEBUG] snarkJS: tauG2: fft 6 join  6/6  1/1 2/4
+[DEBUG] snarkJS: tauG2: fft 6 join  6/6  1/1 1/4
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 0/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 1/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 2/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 3/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 4/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 5/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 6/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 7/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 8/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 9/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 10/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 11/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 12/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 13/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 14/16
+[DEBUG] snarkJS: tauG2: fft 7 mix start: 15/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 6/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 0/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 1/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 2/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 3/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 5/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 7/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 9/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 10/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 11/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 15/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 8/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 12/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 13/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 4/16
+[DEBUG] snarkJS: tauG2: fft 7 mix end: 14/16
+[DEBUG] snarkJS: tauG2: fft  7  join: 4/7
+[DEBUG] snarkJS: tauG2: fft 7 join  4/7  1/8 0/1
+[DEBUG] snarkJS: tauG2: fft 7 join  4/7  3/8 0/1
+[DEBUG] snarkJS: tauG2: fft 7 join  4/7  6/8 0/1
+[DEBUG] snarkJS: tauG2: fft 7 join  4/7  5/8 0/1
+[DEBUG] snarkJS: tauG2: fft 7 join  4/7  7/8 0/1
+[DEBUG] snarkJS: tauG2: fft 7 join  4/7  4/8 0/1
+[DEBUG] snarkJS: tauG2: fft 7 join  4/7  2/8 0/1
+[DEBUG] snarkJS: tauG2: fft 7 join  4/7  8/8 0/1
+[DEBUG] snarkJS: tauG2: fft  7  join: 5/7
+[DEBUG] snarkJS: tauG2: fft 7 join  5/7  1/4 0/2
+[DEBUG] snarkJS: tauG2: fft 7 join  5/7  3/4 0/2
+[DEBUG] snarkJS: tauG2: fft 7 join  5/7  4/4 0/2
+[DEBUG] snarkJS: tauG2: fft 7 join  5/7  1/4 1/2
+[DEBUG] snarkJS: tauG2: fft 7 join  5/7  2/4 1/2
+[DEBUG] snarkJS: tauG2: fft 7 join  5/7  3/4 1/2
+[DEBUG] snarkJS: tauG2: fft 7 join  5/7  2/4 0/2
+[DEBUG] snarkJS: tauG2: fft 7 join  5/7  4/4 1/2
+[DEBUG] snarkJS: tauG2: fft  7  join: 6/7
+[DEBUG] snarkJS: tauG2: fft 7 join  6/7  1/2 0/4
+[DEBUG] snarkJS: tauG2: fft 7 join  6/7  2/2 0/4
+[DEBUG] snarkJS: tauG2: fft 7 join  6/7  1/2 1/4
+[DEBUG] snarkJS: tauG2: fft 7 join  6/7  1/2 2/4
+[DEBUG] snarkJS: tauG2: fft 7 join  6/7  2/2 2/4
+[DEBUG] snarkJS: tauG2: fft 7 join  6/7  2/2 3/4
+[DEBUG] snarkJS: tauG2: fft 7 join  6/7  2/2 1/4
+[DEBUG] snarkJS: tauG2: fft 7 join  6/7  1/2 3/4
+[DEBUG] snarkJS: tauG2: fft  7  join: 7/7
+[DEBUG] snarkJS: tauG2: fft 7 join  7/7  1/1 4/8
+[DEBUG] snarkJS: tauG2: fft 7 join  7/7  1/1 1/8
+[DEBUG] snarkJS: tauG2: fft 7 join  7/7  1/1 0/8
+[DEBUG] snarkJS: tauG2: fft 7 join  7/7  1/1 3/8
+[DEBUG] snarkJS: tauG2: fft 7 join  7/7  1/1 5/8
+[DEBUG] snarkJS: tauG2: fft 7 join  7/7  1/1 6/8
+[DEBUG] snarkJS: tauG2: fft 7 join  7/7  1/1 2/8
+[DEBUG] snarkJS: tauG2: fft 7 join  7/7  1/1 7/8
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 0/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 1/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 2/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 3/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 4/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 5/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 6/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 7/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 8/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 9/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 10/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 11/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 12/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 13/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 14/16
+[DEBUG] snarkJS: tauG2: fft 8 mix start: 15/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 0/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 1/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 4/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 2/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 6/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 10/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 9/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 11/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 13/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 15/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 5/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 7/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 14/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 8/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 12/16
+[DEBUG] snarkJS: tauG2: fft 8 mix end: 3/16
+[DEBUG] snarkJS: tauG2: fft  8  join: 5/8
+[DEBUG] snarkJS: tauG2: fft 8 join  5/8  3/8 0/1
+[DEBUG] snarkJS: tauG2: fft 8 join  5/8  6/8 0/1
+[DEBUG] snarkJS: tauG2: fft 8 join  5/8  7/8 0/1
+[DEBUG] snarkJS: tauG2: fft 8 join  5/8  5/8 0/1
+[DEBUG] snarkJS: tauG2: fft 8 join  5/8  1/8 0/1
+[DEBUG] snarkJS: tauG2: fft 8 join  5/8  4/8 0/1
+[DEBUG] snarkJS: tauG2: fft 8 join  5/8  2/8 0/1
+[DEBUG] snarkJS: tauG2: fft 8 join  5/8  8/8 0/1
+[DEBUG] snarkJS: tauG2: fft  8  join: 6/8
+[DEBUG] snarkJS: tauG2: fft 8 join  6/8  1/4 0/2
+[DEBUG] snarkJS: tauG2: fft 8 join  6/8  2/4 0/2
+[DEBUG] snarkJS: tauG2: fft 8 join  6/8  3/4 0/2
+[DEBUG] snarkJS: tauG2: fft 8 join  6/8  1/4 1/2
+[DEBUG] snarkJS: tauG2: fft 8 join  6/8  2/4 1/2
+[DEBUG] snarkJS: tauG2: fft 8 join  6/8  3/4 1/2
+[DEBUG] snarkJS: tauG2: fft 8 join  6/8  4/4 0/2
+[DEBUG] snarkJS: tauG2: fft 8 join  6/8  4/4 1/2
+[DEBUG] snarkJS: tauG2: fft  8  join: 7/8
+[DEBUG] snarkJS: tauG2: fft 8 join  7/8  2/2 0/4
+[DEBUG] snarkJS: tauG2: fft 8 join  7/8  1/2 0/4
+[DEBUG] snarkJS: tauG2: fft 8 join  7/8  1/2 1/4
+[DEBUG] snarkJS: tauG2: fft 8 join  7/8  1/2 2/4
+[DEBUG] snarkJS: tauG2: fft 8 join  7/8  2/2 1/4
+[DEBUG] snarkJS: tauG2: fft 8 join  7/8  2/2 3/4
+[DEBUG] snarkJS: tauG2: fft 8 join  7/8  2/2 2/4
+[DEBUG] snarkJS: tauG2: fft 8 join  7/8  1/2 3/4
+[DEBUG] snarkJS: tauG2: fft  8  join: 8/8
+[DEBUG] snarkJS: tauG2: fft 8 join  8/8  1/1 0/8
+[DEBUG] snarkJS: tauG2: fft 8 join  8/8  1/1 1/8
+[DEBUG] snarkJS: tauG2: fft 8 join  8/8  1/1 4/8
+[DEBUG] snarkJS: tauG2: fft 8 join  8/8  1/1 6/8
+[DEBUG] snarkJS: tauG2: fft 8 join  8/8  1/1 5/8
+[DEBUG] snarkJS: tauG2: fft 8 join  8/8  1/1 3/8
+[DEBUG] snarkJS: tauG2: fft 8 join  8/8  1/1 2/8
+[DEBUG] snarkJS: tauG2: fft 8 join  8/8  1/1 7/8
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 0/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 1/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 2/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 3/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 4/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 5/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 6/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 7/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 8/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 9/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 10/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 11/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 12/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 13/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 14/16
+[DEBUG] snarkJS: tauG2: fft 9 mix start: 15/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 0/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 13/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 1/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 5/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 10/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 9/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 4/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 15/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 11/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 8/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 2/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 7/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 14/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 3/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 12/16
+[DEBUG] snarkJS: tauG2: fft 9 mix end: 6/16
+[DEBUG] snarkJS: tauG2: fft  9  join: 6/9
+[DEBUG] snarkJS: tauG2: fft 9 join  6/9  5/8 0/1
+[DEBUG] snarkJS: tauG2: fft 9 join  6/9  4/8 0/1
+[DEBUG] snarkJS: tauG2: fft 9 join  6/9  7/8 0/1
+[DEBUG] snarkJS: tauG2: fft 9 join  6/9  1/8 0/1
+[DEBUG] snarkJS: tauG2: fft 9 join  6/9  6/8 0/1
+[DEBUG] snarkJS: tauG2: fft 9 join  6/9  8/8 0/1
+[DEBUG] snarkJS: tauG2: fft 9 join  6/9  3/8 0/1
+[DEBUG] snarkJS: tauG2: fft 9 join  6/9  2/8 0/1
+[DEBUG] snarkJS: tauG2: fft  9  join: 7/9
+[DEBUG] snarkJS: tauG2: fft 9 join  7/9  1/4 0/2
+[DEBUG] snarkJS: tauG2: fft 9 join  7/9  4/4 1/2
+[DEBUG] snarkJS: tauG2: fft 9 join  7/9  1/4 1/2
+[DEBUG] snarkJS: tauG2: fft 9 join  7/9  4/4 0/2
+[DEBUG] snarkJS: tauG2: fft 9 join  7/9  2/4 1/2
+[DEBUG] snarkJS: tauG2: fft 9 join  7/9  3/4 1/2
+[DEBUG] snarkJS: tauG2: fft 9 join  7/9  3/4 0/2
+[DEBUG] snarkJS: tauG2: fft 9 join  7/9  2/4 0/2
+[DEBUG] snarkJS: tauG2: fft  9  join: 8/9
+[DEBUG] snarkJS: tauG2: fft 9 join  8/9  1/2 3/4
+[DEBUG] snarkJS: tauG2: fft 9 join  8/9  1/2 1/4
+[DEBUG] snarkJS: tauG2: fft 9 join  8/9  1/2 2/4
+[DEBUG] snarkJS: tauG2: fft 9 join  8/9  2/2 1/4
+[DEBUG] snarkJS: tauG2: fft 9 join  8/9  1/2 0/4
+[DEBUG] snarkJS: tauG2: fft 9 join  8/9  2/2 0/4
+[DEBUG] snarkJS: tauG2: fft 9 join  8/9  2/2 2/4
+[DEBUG] snarkJS: tauG2: fft 9 join  8/9  2/2 3/4
+[DEBUG] snarkJS: tauG2: fft  9  join: 9/9
+[DEBUG] snarkJS: tauG2: fft 9 join  9/9  1/1 4/8
+[DEBUG] snarkJS: tauG2: fft 9 join  9/9  1/1 6/8
+[DEBUG] snarkJS: tauG2: fft 9 join  9/9  1/1 5/8
+[DEBUG] snarkJS: tauG2: fft 9 join  9/9  1/1 2/8
+[DEBUG] snarkJS: tauG2: fft 9 join  9/9  1/1 3/8
+[DEBUG] snarkJS: tauG2: fft 9 join  9/9  1/1 1/8
+[DEBUG] snarkJS: tauG2: fft 9 join  9/9  1/1 0/8
+[DEBUG] snarkJS: tauG2: fft 9 join  9/9  1/1 7/8
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 0/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 1/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 2/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 3/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 4/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 5/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 6/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 7/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 8/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 9/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 10/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 11/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 12/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 13/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 14/16
+[DEBUG] snarkJS: tauG2: fft 10 mix start: 15/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 14/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 8/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 11/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 0/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 4/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 2/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 15/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 3/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 6/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 9/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 10/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 1/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 7/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 5/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 12/16
+[DEBUG] snarkJS: tauG2: fft 10 mix end: 13/16
+[DEBUG] snarkJS: tauG2: fft  10  join: 7/10
+[DEBUG] snarkJS: tauG2: fft 10 join  7/10  2/8 0/1
+[DEBUG] snarkJS: tauG2: fft 10 join  7/10  5/8 0/1
+[DEBUG] snarkJS: tauG2: fft 10 join  7/10  7/8 0/1
+[DEBUG] snarkJS: tauG2: fft 10 join  7/10  6/8 0/1
+[DEBUG] snarkJS: tauG2: fft 10 join  7/10  4/8 0/1
+[DEBUG] snarkJS: tauG2: fft 10 join  7/10  1/8 0/1
+[DEBUG] snarkJS: tauG2: fft 10 join  7/10  8/8 0/1
+[DEBUG] snarkJS: tauG2: fft 10 join  7/10  3/8 0/1
+[DEBUG] snarkJS: tauG2: fft  10  join: 8/10
+[DEBUG] snarkJS: tauG2: fft 10 join  8/10  4/4 0/2
+[DEBUG] snarkJS: tauG2: fft 10 join  8/10  2/4 1/2
+[DEBUG] snarkJS: tauG2: fft 10 join  8/10  3/4 0/2
+[DEBUG] snarkJS: tauG2: fft 10 join  8/10  1/4 1/2
+[DEBUG] snarkJS: tauG2: fft 10 join  8/10  1/4 0/2
+[DEBUG] snarkJS: tauG2: fft 10 join  8/10  4/4 1/2
+[DEBUG] snarkJS: tauG2: fft 10 join  8/10  3/4 1/2
+[DEBUG] snarkJS: tauG2: fft 10 join  8/10  2/4 0/2
+[DEBUG] snarkJS: tauG2: fft  10  join: 9/10
+[DEBUG] snarkJS: tauG2: fft 10 join  9/10  2/2 0/4
+[DEBUG] snarkJS: tauG2: fft 10 join  9/10  1/2 1/4
+[DEBUG] snarkJS: tauG2: fft 10 join  9/10  2/2 2/4
+[DEBUG] snarkJS: tauG2: fft 10 join  9/10  2/2 3/4
+[DEBUG] snarkJS: tauG2: fft 10 join  9/10  1/2 0/4
+[DEBUG] snarkJS: tauG2: fft 10 join  9/10  1/2 2/4
+[DEBUG] snarkJS: tauG2: fft 10 join  9/10  2/2 1/4
+[DEBUG] snarkJS: tauG2: fft 10 join  9/10  1/2 3/4
+[DEBUG] snarkJS: tauG2: fft  10  join: 10/10
+[DEBUG] snarkJS: tauG2: fft 10 join  10/10  1/1 3/8
+[DEBUG] snarkJS: tauG2: fft 10 join  10/10  1/1 6/8
+[DEBUG] snarkJS: tauG2: fft 10 join  10/10  1/1 0/8
+[DEBUG] snarkJS: tauG2: fft 10 join  10/10  1/1 7/8
+[DEBUG] snarkJS: tauG2: fft 10 join  10/10  1/1 4/8
+[DEBUG] snarkJS: tauG2: fft 10 join  10/10  1/1 2/8
+[DEBUG] snarkJS: tauG2: fft 10 join  10/10  1/1 1/8
+[DEBUG] snarkJS: tauG2: fft 10 join  10/10  1/1 5/8
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 0/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 1/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 2/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 3/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 4/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 5/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 6/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 7/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 8/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 9/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 10/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 11/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 12/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 13/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 14/16
+[DEBUG] snarkJS: tauG2: fft 11 mix start: 15/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 6/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 12/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 10/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 2/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 3/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 11/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 0/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 15/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 5/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 13/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 9/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 14/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 1/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 8/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 4/16
+[DEBUG] snarkJS: tauG2: fft 11 mix end: 7/16
+[DEBUG] snarkJS: tauG2: fft  11  join: 8/11
+[DEBUG] snarkJS: tauG2: fft 11 join  8/11  3/8 0/1
+[DEBUG] snarkJS: tauG2: fft 11 join  8/11  6/8 0/1
+[DEBUG] snarkJS: tauG2: fft 11 join  8/11  4/8 0/1
+[DEBUG] snarkJS: tauG2: fft 11 join  8/11  1/8 0/1
+[DEBUG] snarkJS: tauG2: fft 11 join  8/11  7/8 0/1
+[DEBUG] snarkJS: tauG2: fft 11 join  8/11  2/8 0/1
+[DEBUG] snarkJS: tauG2: fft 11 join  8/11  8/8 0/1
+[DEBUG] snarkJS: tauG2: fft 11 join  8/11  5/8 0/1
+[DEBUG] snarkJS: tauG2: fft  11  join: 9/11
+[DEBUG] snarkJS: tauG2: fft 11 join  9/11  2/4 0/2
+[DEBUG] snarkJS: tauG2: fft 11 join  9/11  4/4 0/2
+[DEBUG] snarkJS: tauG2: fft 11 join  9/11  1/4 0/2
+[DEBUG] snarkJS: tauG2: fft 11 join  9/11  3/4 0/2
+[DEBUG] snarkJS: tauG2: fft 11 join  9/11  2/4 1/2
+[DEBUG] snarkJS: tauG2: fft 11 join  9/11  3/4 1/2
+[DEBUG] snarkJS: tauG2: fft 11 join  9/11  4/4 1/2
+[DEBUG] snarkJS: tauG2: fft 11 join  9/11  1/4 1/2
+[DEBUG] snarkJS: tauG2: fft  11  join: 10/11
+[DEBUG] snarkJS: tauG2: fft 11 join  10/11  1/2 0/4
+[DEBUG] snarkJS: tauG2: fft 11 join  10/11  1/2 1/4
+[DEBUG] snarkJS: tauG2: fft 11 join  10/11  1/2 2/4
+[DEBUG] snarkJS: tauG2: fft 11 join  10/11  1/2 3/4
+[DEBUG] snarkJS: tauG2: fft 11 join  10/11  2/2 0/4
+[DEBUG] snarkJS: tauG2: fft 11 join  10/11  2/2 2/4
+[DEBUG] snarkJS: tauG2: fft 11 join  10/11  2/2 3/4
+[DEBUG] snarkJS: tauG2: fft 11 join  10/11  2/2 1/4
+[DEBUG] snarkJS: tauG2: fft  11  join: 11/11
+[DEBUG] snarkJS: tauG2: fft 11 join  11/11  1/1 5/8
+[DEBUG] snarkJS: tauG2: fft 11 join  11/11  1/1 2/8
+[DEBUG] snarkJS: tauG2: fft 11 join  11/11  1/1 0/8
+[DEBUG] snarkJS: tauG2: fft 11 join  11/11  1/1 6/8
+[DEBUG] snarkJS: tauG2: fft 11 join  11/11  1/1 1/8
+[DEBUG] snarkJS: tauG2: fft 11 join  11/11  1/1 4/8
+[DEBUG] snarkJS: tauG2: fft 11 join  11/11  1/1 7/8
+[DEBUG] snarkJS: tauG2: fft 11 join  11/11  1/1 3/8
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 0/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 1/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 2/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 3/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 4/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 5/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 6/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 7/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 8/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 9/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 10/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 11/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 12/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 13/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 14/16
+[DEBUG] snarkJS: tauG2: fft 12 mix start: 15/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 10/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 9/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 14/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 3/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 2/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 5/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 15/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 6/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 13/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 0/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 4/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 8/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 11/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 7/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 12/16
+[DEBUG] snarkJS: tauG2: fft 12 mix end: 1/16
+[DEBUG] snarkJS: tauG2: fft  12  join: 9/12
+[DEBUG] snarkJS: tauG2: fft 12 join  9/12  2/8 0/1
+[DEBUG] snarkJS: tauG2: fft 12 join  9/12  7/8 0/1
+[DEBUG] snarkJS: tauG2: fft 12 join  9/12  4/8 0/1
+[DEBUG] snarkJS: tauG2: fft 12 join  9/12  5/8 0/1
+[DEBUG] snarkJS: tauG2: fft 12 join  9/12  8/8 0/1
+[DEBUG] snarkJS: tauG2: fft 12 join  9/12  3/8 0/1
+[DEBUG] snarkJS: tauG2: fft 12 join  9/12  6/8 0/1
+[DEBUG] snarkJS: tauG2: fft 12 join  9/12  1/8 0/1
+[DEBUG] snarkJS: tauG2: fft  12  join: 10/12
+[DEBUG] snarkJS: tauG2: fft 12 join  10/12  2/4 0/2
+[DEBUG] snarkJS: tauG2: fft 12 join  10/12  4/4 1/2
+[DEBUG] snarkJS: tauG2: fft 12 join  10/12  4/4 0/2
+[DEBUG] snarkJS: tauG2: fft 12 join  10/12  1/4 0/2
+[DEBUG] snarkJS: tauG2: fft 12 join  10/12  3/4 1/2
+[DEBUG] snarkJS: tauG2: fft 12 join  10/12  1/4 1/2
+[DEBUG] snarkJS: tauG2: fft 12 join  10/12  2/4 1/2
+[DEBUG] snarkJS: tauG2: fft 12 join  10/12  3/4 0/2
+[DEBUG] snarkJS: tauG2: fft  12  join: 11/12
+[DEBUG] snarkJS: tauG2: fft 12 join  11/12  1/2 2/4
+[DEBUG] snarkJS: tauG2: fft 12 join  11/12  2/2 2/4
+[DEBUG] snarkJS: tauG2: fft 12 join  11/12  2/2 3/4
+[DEBUG] snarkJS: tauG2: fft 12 join  11/12  2/2 0/4
+[DEBUG] snarkJS: tauG2: fft 12 join  11/12  1/2 0/4
+[DEBUG] snarkJS: tauG2: fft 12 join  11/12  1/2 1/4
+[DEBUG] snarkJS: tauG2: fft 12 join  11/12  1/2 3/4
+[DEBUG] snarkJS: tauG2: fft 12 join  11/12  2/2 1/4
+[DEBUG] snarkJS: tauG2: fft  12  join: 12/12
+[DEBUG] snarkJS: tauG2: fft 12 join  12/12  1/1 0/8
+[DEBUG] snarkJS: tauG2: fft 12 join  12/12  1/1 7/8
+[DEBUG] snarkJS: tauG2: fft 12 join  12/12  1/1 5/8
+[DEBUG] snarkJS: tauG2: fft 12 join  12/12  1/1 4/8
+[DEBUG] snarkJS: tauG2: fft 12 join  12/12  1/1 1/8
+[DEBUG] snarkJS: tauG2: fft 12 join  12/12  1/1 3/8
+[DEBUG] snarkJS: tauG2: fft 12 join  12/12  1/1 2/8
+[DEBUG] snarkJS: tauG2: fft 12 join  12/12  1/1 6/8
+[DEBUG] snarkJS: Starting section: alphaTauG1
+[DEBUG] snarkJS: alphaTauG1: fft 0 mix start: 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 0 mix end: 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 1 mix start: 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 1 mix end: 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 2 mix start: 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 2 mix end: 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 3 mix start: 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 3 mix end: 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 4 mix start: 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 4 mix start: 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 4 mix end: 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 4 mix end: 1/2
+[DEBUG] snarkJS: alphaTauG1: fft  4  join: 4/4
+[DEBUG] snarkJS: alphaTauG1: fft 4 join  4/4  1/1 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 5 mix start: 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 5 mix start: 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 5 mix start: 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 5 mix start: 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 5 mix end: 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 5 mix end: 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 5 mix end: 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 5 mix end: 3/4
+[DEBUG] snarkJS: alphaTauG1: fft  5  join: 4/5
+[DEBUG] snarkJS: alphaTauG1: fft 5 join  4/5  1/2 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 5 join  4/5  2/2 0/1
+[DEBUG] snarkJS: alphaTauG1: fft  5  join: 5/5
+[DEBUG] snarkJS: alphaTauG1: fft 5 join  5/5  1/1 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 5 join  5/5  1/1 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix start: 0/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix start: 1/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix start: 2/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix start: 3/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix start: 4/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix start: 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix start: 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix start: 7/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix end: 0/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix end: 1/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix end: 4/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix end: 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix end: 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix end: 7/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix end: 2/8
+[DEBUG] snarkJS: alphaTauG1: fft 6 mix end: 3/8
+[DEBUG] snarkJS: alphaTauG1: fft  6  join: 4/6
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  4/6  1/4 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  4/6  2/4 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  4/6  3/4 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  4/6  4/4 0/1
+[DEBUG] snarkJS: alphaTauG1: fft  6  join: 5/6
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  5/6  2/2 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  5/6  1/2 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  5/6  1/2 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  5/6  2/2 1/2
+[DEBUG] snarkJS: alphaTauG1: fft  6  join: 6/6
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  6/6  1/1 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  6/6  1/1 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  6/6  1/1 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 6 join  6/6  1/1 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix start: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 7 mix end: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft  7  join: 4/7
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  4/7  2/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  4/7  5/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  4/7  6/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  4/7  7/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  4/7  8/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  4/7  1/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  4/7  3/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  4/7  4/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft  7  join: 5/7
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  5/7  1/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  5/7  2/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  5/7  3/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  5/7  3/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  5/7  1/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  5/7  4/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  5/7  2/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  5/7  4/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft  7  join: 6/7
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  6/7  1/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  6/7  2/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  6/7  1/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  6/7  2/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  6/7  1/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  6/7  2/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  6/7  1/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  6/7  2/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft  7  join: 7/7
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  7/7  1/1 0/8
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  7/7  1/1 3/8
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  7/7  1/1 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  7/7  1/1 4/8
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  7/7  1/1 7/8
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  7/7  1/1 2/8
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  7/7  1/1 1/8
+[DEBUG] snarkJS: alphaTauG1: fft 7 join  7/7  1/1 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix start: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 8 mix end: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft  8  join: 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  5/8  2/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  5/8  4/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  5/8  5/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  5/8  6/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  5/8  1/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  5/8  3/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  5/8  7/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  5/8  8/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft  8  join: 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  6/8  2/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  6/8  3/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  6/8  2/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  6/8  3/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  6/8  4/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  6/8  1/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  6/8  1/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  6/8  4/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft  8  join: 7/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  7/8  1/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  7/8  1/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  7/8  2/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  7/8  2/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  7/8  1/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  7/8  2/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  7/8  2/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  7/8  1/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft  8  join: 8/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  8/8  1/1 3/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  8/8  1/1 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  8/8  1/1 0/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  8/8  1/1 1/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  8/8  1/1 2/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  8/8  1/1 7/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  8/8  1/1 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 8 join  8/8  1/1 4/8
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix start: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 9 mix end: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft  9  join: 6/9
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  6/9  6/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  6/9  1/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  6/9  2/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  6/9  4/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  6/9  5/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  6/9  7/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  6/9  3/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  6/9  8/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft  9  join: 7/9
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  7/9  3/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  7/9  4/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  7/9  3/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  7/9  1/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  7/9  1/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  7/9  2/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  7/9  2/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  7/9  4/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft  9  join: 8/9
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  8/9  1/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  8/9  2/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  8/9  1/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  8/9  2/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  8/9  2/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  8/9  1/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  8/9  1/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  8/9  2/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft  9  join: 9/9
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  9/9  1/1 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  9/9  1/1 2/8
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  9/9  1/1 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  9/9  1/1 0/8
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  9/9  1/1 4/8
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  9/9  1/1 1/8
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  9/9  1/1 3/8
+[DEBUG] snarkJS: alphaTauG1: fft 9 join  9/9  1/1 7/8
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix start: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 10 mix end: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft  10  join: 7/10
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  7/10  4/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  7/10  6/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  7/10  2/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  7/10  7/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  7/10  3/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  7/10  1/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  7/10  5/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  7/10  8/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft  10  join: 8/10
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  8/10  3/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  8/10  3/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  8/10  4/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  8/10  4/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  8/10  1/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  8/10  1/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  8/10  2/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  8/10  2/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft  10  join: 9/10
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  9/10  1/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  9/10  1/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  9/10  2/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  9/10  2/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  9/10  1/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  9/10  1/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  9/10  2/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  9/10  2/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft  10  join: 10/10
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  10/10  1/1 1/8
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  10/10  1/1 2/8
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  10/10  1/1 7/8
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  10/10  1/1 0/8
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  10/10  1/1 3/8
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  10/10  1/1 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  10/10  1/1 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 10 join  10/10  1/1 4/8
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix start: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 11 mix end: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft  11  join: 8/11
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  8/11  8/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  8/11  4/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  8/11  2/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  8/11  5/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  8/11  3/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  8/11  1/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  8/11  6/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  8/11  7/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft  11  join: 9/11
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  9/11  2/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  9/11  3/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  9/11  4/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  9/11  3/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  9/11  2/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  9/11  1/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  9/11  1/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  9/11  4/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft  11  join: 10/11
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  10/11  1/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  10/11  2/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  10/11  1/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  10/11  1/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  10/11  2/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  10/11  2/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  10/11  2/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  10/11  1/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft  11  join: 11/11
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  11/11  1/1 3/8
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  11/11  1/1 0/8
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  11/11  1/1 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  11/11  1/1 1/8
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  11/11  1/1 4/8
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  11/11  1/1 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  11/11  1/1 7/8
+[DEBUG] snarkJS: alphaTauG1: fft 11 join  11/11  1/1 2/8
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix start: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 6/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 7/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 13/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 14/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 3/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 11/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 8/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 15/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 2/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 10/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 5/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 0/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 9/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 1/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 12/16
+[DEBUG] snarkJS: alphaTauG1: fft 12 mix end: 4/16
+[DEBUG] snarkJS: alphaTauG1: fft  12  join: 9/12
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  9/12  2/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  9/12  5/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  9/12  8/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  9/12  4/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  9/12  1/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  9/12  7/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  9/12  6/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  9/12  3/8 0/1
+[DEBUG] snarkJS: alphaTauG1: fft  12  join: 10/12
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  10/12  4/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  10/12  1/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  10/12  4/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  10/12  3/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  10/12  2/4 1/2
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  10/12  3/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  10/12  2/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  10/12  1/4 0/2
+[DEBUG] snarkJS: alphaTauG1: fft  12  join: 11/12
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  11/12  1/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  11/12  2/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  11/12  1/2 0/4
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  11/12  1/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  11/12  2/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  11/12  2/2 2/4
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  11/12  1/2 1/4
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  11/12  2/2 3/4
+[DEBUG] snarkJS: alphaTauG1: fft  12  join: 12/12
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  12/12  1/1 5/8
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  12/12  1/1 4/8
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  12/12  1/1 6/8
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  12/12  1/1 3/8
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  12/12  1/1 1/8
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  12/12  1/1 0/8
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  12/12  1/1 2/8
+[DEBUG] snarkJS: alphaTauG1: fft 12 join  12/12  1/1 7/8
+[DEBUG] snarkJS: Starting section: betaTauG1
+[DEBUG] snarkJS: betaTauG1: fft 0 mix start: 0/1
+[DEBUG] snarkJS: betaTauG1: fft 0 mix end: 0/1
+[DEBUG] snarkJS: betaTauG1: fft 1 mix start: 0/1
+[DEBUG] snarkJS: betaTauG1: fft 1 mix end: 0/1
+[DEBUG] snarkJS: betaTauG1: fft 2 mix start: 0/1
+[DEBUG] snarkJS: betaTauG1: fft 2 mix end: 0/1
+[DEBUG] snarkJS: betaTauG1: fft 3 mix start: 0/1
+[DEBUG] snarkJS: betaTauG1: fft 3 mix end: 0/1
+[DEBUG] snarkJS: betaTauG1: fft 4 mix start: 0/2
+[DEBUG] snarkJS: betaTauG1: fft 4 mix start: 1/2
+[DEBUG] snarkJS: betaTauG1: fft 4 mix end: 0/2
+[DEBUG] snarkJS: betaTauG1: fft 4 mix end: 1/2
+[DEBUG] snarkJS: betaTauG1: fft  4  join: 4/4
+[DEBUG] snarkJS: betaTauG1: fft 4 join  4/4  1/1 0/1
+[DEBUG] snarkJS: betaTauG1: fft 5 mix start: 0/4
+[DEBUG] snarkJS: betaTauG1: fft 5 mix start: 1/4
+[DEBUG] snarkJS: betaTauG1: fft 5 mix start: 2/4
+[DEBUG] snarkJS: betaTauG1: fft 5 mix start: 3/4
+[DEBUG] snarkJS: betaTauG1: fft 5 mix end: 0/4
+[DEBUG] snarkJS: betaTauG1: fft 5 mix end: 1/4
+[DEBUG] snarkJS: betaTauG1: fft 5 mix end: 2/4
+[DEBUG] snarkJS: betaTauG1: fft 5 mix end: 3/4
+[DEBUG] snarkJS: betaTauG1: fft  5  join: 4/5
+[DEBUG] snarkJS: betaTauG1: fft 5 join  4/5  1/2 0/1
+[DEBUG] snarkJS: betaTauG1: fft 5 join  4/5  2/2 0/1
+[DEBUG] snarkJS: betaTauG1: fft  5  join: 5/5
+[DEBUG] snarkJS: betaTauG1: fft 5 join  5/5  1/1 0/2
+[DEBUG] snarkJS: betaTauG1: fft 5 join  5/5  1/1 1/2
+[DEBUG] snarkJS: betaTauG1: fft 6 mix start: 0/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix start: 1/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix start: 2/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix start: 3/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix start: 4/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix start: 5/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix start: 6/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix start: 7/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix end: 2/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix end: 0/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix end: 1/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix end: 3/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix end: 4/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix end: 5/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix end: 6/8
+[DEBUG] snarkJS: betaTauG1: fft 6 mix end: 7/8
+[DEBUG] snarkJS: betaTauG1: fft  6  join: 4/6
+[DEBUG] snarkJS: betaTauG1: fft 6 join  4/6  1/4 0/1
+[DEBUG] snarkJS: betaTauG1: fft 6 join  4/6  2/4 0/1
+[DEBUG] snarkJS: betaTauG1: fft 6 join  4/6  3/4 0/1
+[DEBUG] snarkJS: betaTauG1: fft 6 join  4/6  4/4 0/1
+[DEBUG] snarkJS: betaTauG1: fft  6  join: 5/6
+[DEBUG] snarkJS: betaTauG1: fft 6 join  5/6  1/2 0/2
+[DEBUG] snarkJS: betaTauG1: fft 6 join  5/6  2/2 0/2
+[DEBUG] snarkJS: betaTauG1: fft 6 join  5/6  1/2 1/2
+[DEBUG] snarkJS: betaTauG1: fft 6 join  5/6  2/2 1/2
+[DEBUG] snarkJS: betaTauG1: fft  6  join: 6/6
+[DEBUG] snarkJS: betaTauG1: fft 6 join  6/6  1/1 0/4
+[DEBUG] snarkJS: betaTauG1: fft 6 join  6/6  1/1 1/4
+[DEBUG] snarkJS: betaTauG1: fft 6 join  6/6  1/1 2/4
+[DEBUG] snarkJS: betaTauG1: fft 6 join  6/6  1/1 3/4
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix start: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 7 mix end: 6/16
+[DEBUG] snarkJS: betaTauG1: fft  7  join: 4/7
+[DEBUG] snarkJS: betaTauG1: fft 7 join  4/7  1/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 7 join  4/7  4/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 7 join  4/7  5/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 7 join  4/7  6/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 7 join  4/7  2/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 7 join  4/7  3/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 7 join  4/7  7/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 7 join  4/7  8/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft  7  join: 5/7
+[DEBUG] snarkJS: betaTauG1: fft 7 join  5/7  1/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 7 join  5/7  3/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 7 join  5/7  1/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 7 join  5/7  2/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 7 join  5/7  3/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 7 join  5/7  4/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 7 join  5/7  2/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 7 join  5/7  4/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft  7  join: 6/7
+[DEBUG] snarkJS: betaTauG1: fft 7 join  6/7  2/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 7 join  6/7  1/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 7 join  6/7  2/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 7 join  6/7  1/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 7 join  6/7  2/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 7 join  6/7  1/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 7 join  6/7  1/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 7 join  6/7  2/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft  7  join: 7/7
+[DEBUG] snarkJS: betaTauG1: fft 7 join  7/7  1/1 4/8
+[DEBUG] snarkJS: betaTauG1: fft 7 join  7/7  1/1 6/8
+[DEBUG] snarkJS: betaTauG1: fft 7 join  7/7  1/1 0/8
+[DEBUG] snarkJS: betaTauG1: fft 7 join  7/7  1/1 3/8
+[DEBUG] snarkJS: betaTauG1: fft 7 join  7/7  1/1 2/8
+[DEBUG] snarkJS: betaTauG1: fft 7 join  7/7  1/1 1/8
+[DEBUG] snarkJS: betaTauG1: fft 7 join  7/7  1/1 5/8
+[DEBUG] snarkJS: betaTauG1: fft 7 join  7/7  1/1 7/8
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix start: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 8 mix end: 15/16
+[DEBUG] snarkJS: betaTauG1: fft  8  join: 5/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  5/8  1/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 8 join  5/8  3/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 8 join  5/8  4/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 8 join  5/8  5/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 8 join  5/8  6/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 8 join  5/8  8/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 8 join  5/8  2/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 8 join  5/8  7/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft  8  join: 6/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  6/8  1/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 8 join  6/8  3/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 8 join  6/8  4/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 8 join  6/8  4/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 8 join  6/8  2/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 8 join  6/8  2/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 8 join  6/8  1/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 8 join  6/8  3/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft  8  join: 7/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  7/8  1/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 8 join  7/8  1/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 8 join  7/8  2/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 8 join  7/8  2/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 8 join  7/8  1/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 8 join  7/8  2/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 8 join  7/8  2/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 8 join  7/8  1/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft  8  join: 8/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  8/8  1/1 1/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  8/8  1/1 2/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  8/8  1/1 4/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  8/8  1/1 0/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  8/8  1/1 3/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  8/8  1/1 7/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  8/8  1/1 5/8
+[DEBUG] snarkJS: betaTauG1: fft 8 join  8/8  1/1 6/8
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix start: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 9 mix end: 14/16
+[DEBUG] snarkJS: betaTauG1: fft  9  join: 6/9
+[DEBUG] snarkJS: betaTauG1: fft 9 join  6/9  3/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 9 join  6/9  1/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 9 join  6/9  2/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 9 join  6/9  5/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 9 join  6/9  6/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 9 join  6/9  7/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 9 join  6/9  8/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 9 join  6/9  4/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft  9  join: 7/9
+[DEBUG] snarkJS: betaTauG1: fft 9 join  7/9  1/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 9 join  7/9  3/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 9 join  7/9  2/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 9 join  7/9  2/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 9 join  7/9  3/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 9 join  7/9  4/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 9 join  7/9  1/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 9 join  7/9  4/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft  9  join: 8/9
+[DEBUG] snarkJS: betaTauG1: fft 9 join  8/9  1/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 9 join  8/9  2/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 9 join  8/9  1/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 9 join  8/9  1/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 9 join  8/9  2/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 9 join  8/9  2/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 9 join  8/9  1/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 9 join  8/9  2/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft  9  join: 9/9
+[DEBUG] snarkJS: betaTauG1: fft 9 join  9/9  1/1 2/8
+[DEBUG] snarkJS: betaTauG1: fft 9 join  9/9  1/1 4/8
+[DEBUG] snarkJS: betaTauG1: fft 9 join  9/9  1/1 3/8
+[DEBUG] snarkJS: betaTauG1: fft 9 join  9/9  1/1 7/8
+[DEBUG] snarkJS: betaTauG1: fft 9 join  9/9  1/1 0/8
+[DEBUG] snarkJS: betaTauG1: fft 9 join  9/9  1/1 1/8
+[DEBUG] snarkJS: betaTauG1: fft 9 join  9/9  1/1 5/8
+[DEBUG] snarkJS: betaTauG1: fft 9 join  9/9  1/1 6/8
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix start: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 10 mix end: 8/16
+[DEBUG] snarkJS: betaTauG1: fft  10  join: 7/10
+[DEBUG] snarkJS: betaTauG1: fft 10 join  7/10  5/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 10 join  7/10  7/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 10 join  7/10  2/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 10 join  7/10  3/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 10 join  7/10  4/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 10 join  7/10  8/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 10 join  7/10  1/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 10 join  7/10  6/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft  10  join: 8/10
+[DEBUG] snarkJS: betaTauG1: fft 10 join  8/10  2/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 10 join  8/10  1/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 10 join  8/10  2/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 10 join  8/10  3/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 10 join  8/10  3/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 10 join  8/10  4/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 10 join  8/10  1/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 10 join  8/10  4/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft  10  join: 9/10
+[DEBUG] snarkJS: betaTauG1: fft 10 join  9/10  1/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 10 join  9/10  1/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 10 join  9/10  2/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 10 join  9/10  2/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 10 join  9/10  2/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 10 join  9/10  1/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 10 join  9/10  1/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 10 join  9/10  2/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft  10  join: 10/10
+[DEBUG] snarkJS: betaTauG1: fft 10 join  10/10  1/1 4/8
+[DEBUG] snarkJS: betaTauG1: fft 10 join  10/10  1/1 5/8
+[DEBUG] snarkJS: betaTauG1: fft 10 join  10/10  1/1 1/8
+[DEBUG] snarkJS: betaTauG1: fft 10 join  10/10  1/1 3/8
+[DEBUG] snarkJS: betaTauG1: fft 10 join  10/10  1/1 2/8
+[DEBUG] snarkJS: betaTauG1: fft 10 join  10/10  1/1 6/8
+[DEBUG] snarkJS: betaTauG1: fft 10 join  10/10  1/1 7/8
+[DEBUG] snarkJS: betaTauG1: fft 10 join  10/10  1/1 0/8
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix start: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 11 mix end: 15/16
+[DEBUG] snarkJS: betaTauG1: fft  11  join: 8/11
+[DEBUG] snarkJS: betaTauG1: fft 11 join  8/11  2/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 11 join  8/11  3/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 11 join  8/11  7/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 11 join  8/11  1/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 11 join  8/11  4/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 11 join  8/11  6/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 11 join  8/11  5/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 11 join  8/11  8/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft  11  join: 9/11
+[DEBUG] snarkJS: betaTauG1: fft 11 join  9/11  4/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 11 join  9/11  2/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 11 join  9/11  3/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 11 join  9/11  4/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 11 join  9/11  3/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 11 join  9/11  1/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 11 join  9/11  2/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 11 join  9/11  1/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft  11  join: 10/11
+[DEBUG] snarkJS: betaTauG1: fft 11 join  10/11  1/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 11 join  10/11  1/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 11 join  10/11  2/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 11 join  10/11  1/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 11 join  10/11  2/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 11 join  10/11  2/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 11 join  10/11  2/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 11 join  10/11  1/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft  11  join: 11/11
+[DEBUG] snarkJS: betaTauG1: fft 11 join  11/11  1/1 6/8
+[DEBUG] snarkJS: betaTauG1: fft 11 join  11/11  1/1 1/8
+[DEBUG] snarkJS: betaTauG1: fft 11 join  11/11  1/1 4/8
+[DEBUG] snarkJS: betaTauG1: fft 11 join  11/11  1/1 0/8
+[DEBUG] snarkJS: betaTauG1: fft 11 join  11/11  1/1 5/8
+[DEBUG] snarkJS: betaTauG1: fft 11 join  11/11  1/1 3/8
+[DEBUG] snarkJS: betaTauG1: fft 11 join  11/11  1/1 7/8
+[DEBUG] snarkJS: betaTauG1: fft 11 join  11/11  1/1 2/8
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 0/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix start: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 8/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 7/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 6/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 5/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 2/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 12/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 14/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 1/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 4/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 9/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 3/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 15/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 10/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 13/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 11/16
+[DEBUG] snarkJS: betaTauG1: fft 12 mix end: 0/16
+[DEBUG] snarkJS: betaTauG1: fft  12  join: 9/12
+[DEBUG] snarkJS: betaTauG1: fft 12 join  9/12  7/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 12 join  9/12  5/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 12 join  9/12  3/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 12 join  9/12  4/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 12 join  9/12  2/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 12 join  9/12  6/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 12 join  9/12  8/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft 12 join  9/12  1/8 0/1
+[DEBUG] snarkJS: betaTauG1: fft  12  join: 10/12
+[DEBUG] snarkJS: betaTauG1: fft 12 join  10/12  1/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 12 join  10/12  3/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 12 join  10/12  3/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 12 join  10/12  2/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 12 join  10/12  2/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 12 join  10/12  4/4 1/2
+[DEBUG] snarkJS: betaTauG1: fft 12 join  10/12  1/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft 12 join  10/12  4/4 0/2
+[DEBUG] snarkJS: betaTauG1: fft  12  join: 11/12
+[DEBUG] snarkJS: betaTauG1: fft 12 join  11/12  2/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 12 join  11/12  1/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 12 join  11/12  1/2 0/4
+[DEBUG] snarkJS: betaTauG1: fft 12 join  11/12  1/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 12 join  11/12  2/2 3/4
+[DEBUG] snarkJS: betaTauG1: fft 12 join  11/12  2/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft 12 join  11/12  2/2 2/4
+[DEBUG] snarkJS: betaTauG1: fft 12 join  11/12  1/2 1/4
+[DEBUG] snarkJS: betaTauG1: fft  12  join: 12/12
+[DEBUG] snarkJS: betaTauG1: fft 12 join  12/12  1/1 4/8
+[DEBUG] snarkJS: betaTauG1: fft 12 join  12/12  1/1 6/8
+[DEBUG] snarkJS: betaTauG1: fft 12 join  12/12  1/1 3/8
+[DEBUG] snarkJS: betaTauG1: fft 12 join  12/12  1/1 5/8
+[DEBUG] snarkJS: betaTauG1: fft 12 join  12/12  1/1 7/8
+[DEBUG] snarkJS: betaTauG1: fft 12 join  12/12  1/1 1/8
+[DEBUG] snarkJS: betaTauG1: fft 12 join  12/12  1/1 0/8
+[DEBUG] snarkJS: betaTauG1: fft 12 join  12/12  1/1 2/8
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs groth16 setup multiplier2.r1cs pot12_final.ptau multiplier2_0000.zkey
+[ERROR] snarkJS: Error: ENOENT: no such file or directory, open 'multiplier2.r1cs'
+    at async Object.open (node:internal/fs/promises:633:25)
+    at async open (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async newZKey (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:3144:50)
+    at async Object.zkeyNew [as action] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:13369:5)
+    at async clProcessor (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:481:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'multiplier2.r1cs'
+}
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs groth16 setup test.r1cs pot12_final
+.ptau multiplier2_0000.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                4849747f cc25bef3 fe246b22 066d888c
+                c7960deb 7041aaa1 e0eee3ee 9992ed64
+                41ab9fa4 90cfc85b bfd6ebdd fc5fe43d
+                2eff16ad e2b225af 81953627 ec0f32b8
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs zkey contribute test_0000.zkey test
+_0001.zkey --name="1st Contributor Name" -v
+[ERROR] snarkJS: Error: ENOENT: no such file or directory, open 'test_0000.zkey'
+    at async Object.open (node:internal/fs/promises:633:25)
+    at async open (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async phase2contribute (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:4985:45)
+    at async Object.zkeyContribute [as action] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:13495:5)
+    at async clProcessor (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:481:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'test_0000.zkey'
+}
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs zkey contribute test_0000.zkey test_0001.zkey --name="1st Contributor Name" -v
+Enter a random text. (Entropy): wewew
+[DEBUG] snarkJS: Applying key: L Section: 0/1
+[DEBUG] snarkJS: Applying key: H Section: 0/4
+[INFO]  snarkJS: Circuit Hash:
+                4849747f cc25bef3 fe246b22 066d888c
+                c7960deb 7041aaa1 e0eee3ee 9992ed64
+                41ab9fa4 90cfc85b bfd6ebdd fc5fe43d
+                2eff16ad e2b225af 81953627 ec0f32b8
+[INFO]  snarkJS: Contribution Hash:
+                0b54b526 1f757c62 956155c5 0b21c87a
+                64c7d71c 3f2e0b44 d39e89b1 c385a5e7
+                ec6e2545 f3384d0d 43c9cc32 87d13f94
+                8bd6c6eb 4c6e3d0b 934764a1 988e5e69
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs zkey export verificationkey test_00
+01.zkey verification_key.json
+[INFO]  snarkJS: EXPORT VERIFICATION KEY STARTED
+[INFO]  snarkJS: > Detected protocol: groth16
+[INFO]  snarkJS: EXPORT VERIFICATION KEY FINISHED
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs groth16 prove test_0001.zkey witnes
+s.wtns proof.json public.json
+[ERROR] snarkJS: Error: ENOENT: no such file or directory, open 'witness.wtns'
+    at async Object.open (node:internal/fs/promises:633:25)
+    at async open (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async groth16Prove$1 (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:5700:50)
+    at async Object.groth16Prove [as action] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:12975:36)
+    at async clProcessor (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:481:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'witness.wtns'
+}
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ ^C
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs groth16 prove multiplier2_0001.zkey witness.wtns proof.json public.json
+[ERROR] snarkJS: Error: ENOENT: no such file or directory, open 'witness.wtns'
+    at async Object.open (node:internal/fs/promises:633:25)
+    at async open (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async groth16Prove$1 (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:5700:50)
+    at async Object.groth16Prove [as action] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:12975:36)
+    at async clProcessor (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:481:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'witness.wtns'
+}
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ cd test_js
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2/test_js$ snarkjs groth16 prove multiplier2_0001.zkey witness.wtns proof.json public.json
+[ERROR] snarkJS: Error: ENOENT: no such file or directory, open 'multiplier2_0001.zkey'
+    at async Object.open (node:internal/fs/promises:633:25)
+    at async open (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async groth16Prove$1 (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:5704:50)
+    at async Object.groth16Prove [as action] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:12975:36)
+    at async clProcessor (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:481:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'multiplier2_0001.zkey'
+}
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2/test_js$ snarkjs groth16 prove test_0001.zke
+y witness.wtns proof.json public.json
+[ERROR] snarkJS: Error: ENOENT: no such file or directory, open 'test_0001.zkey'
+    at async Object.open (node:internal/fs/promises:633:25)
+    at async open (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:14:15)
+    at async Object.readExisting$2 [as readExisting] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/fastfile/build/main.cjs:975:16)
+    at async Object.readBinFile (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/node_modules/@iden3/binfileutils/build/main.cjs:30:16)
+    at async groth16Prove$1 (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:5704:50)
+    at async Object.groth16Prove [as action] (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:12975:36)
+    at async clProcessor (/home/changkaiyang/.npm-global/lib/node_modules/snarkjs/build/cli.cjs:481:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'test_0001.zkey'
+}
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2/test_js$ cd -
+/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$ snarkjs groth16 prove test_0001.zkey witness.wtns proof.json public.json
+changkaiyang@kaiyang-Chang:/mnt/c/Users/22814/Desktop/Ai-and-Blockchain/HW2$
